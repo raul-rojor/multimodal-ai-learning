@@ -1,3 +1,4 @@
+'''
 ================================================================================
 MULTIMODAL AI: COMPLETE CONCEPTUAL FRAMEWORK
 ================================================================================
@@ -129,27 +130,27 @@ NEURON (FORWARD PASS)
   Why: Neural networks = many connected neurons; encoders are neural networks
 
 CONVOLUTIONAL NEURAL NETWORK (CNN)
-  Future Stage: 2 (Image Encoder)
+  Stage: 2 (Image Encoder)
   Role: Turns raw pixels (224×224×3) into image embedding (512 numbers)
   Why Needed: Images are too large; CNNs compress while preserving patterns
 
 TRANSFORMER / ATTENTION
-  Future Stage: 2 (Text Encoder)
+  Stage: 2 (Text Encoder)
   Role: Turns tokenized text into text embedding (512 numbers)
   Why Needed: Text has variable length; attention handles sequences
 
 CONTRASTIVE LOSS (InfoNCE)
-  Future Stage: 3, Steps 9-12
+  Stage: 3, Steps 9-12
   Role: Pulls matching pairs together, pushes non-matching apart
-  Note: You already know the math (softmax + cross-entropy on similarity matrix)
+  The math: (softmax + cross-entropy on similarity matrix)
 
 EMBEDDING SPACE
-  Future Stage: 2 (Output of both encoders)
+  Stage: 2 (Output of both encoders)
   Role: A vector space where similar concepts are close together
   Why: The entire goal of training is to create this space
 
 ZERO-SHOT CLASSIFICATION
-  Future Stage: 4 (Inference)
+  Stage: 4 (Inference)
   Role: Compare image to class name embeddings without training on those classes
   Why: CLIP's superpower - no training examples needed for new categories
 
@@ -205,7 +206,7 @@ QUICK REFERENCE CARD
 │  ───────────────                  ───────────────                          │
 │  Input: 224×224×3 pixels          Input: variable length text              │
 │  Processing: CNN layers           Processing: Attention layers             │
-│  Output: 512 numbers              Output: 512 numbers                      │
+│  Output: 512 numbers (embeddings) Output: 512 numbers (embeddings)           │
 │  Role: Compress spatial info      Role: Compress sequential info           │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
@@ -241,3 +242,4 @@ WHEN TO REFERENCE THIS SHEET
 - When debugging: Check which stage your error occurs in
 
 ================================================================================
+'''
