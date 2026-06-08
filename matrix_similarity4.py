@@ -30,7 +30,7 @@ print(f"Text vector:  {text_vec}")
 print(f"Dot product (similarity): {similarity:.3f}")
 print("Higher dot product = more similar")
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("MATRIX MULTIPLICATION = MANY SIMILARITIES AT ONCE")
 print("=" * 50)
 
@@ -63,7 +63,7 @@ for i in range(3):
         print(f"{similarity_matrix[i,j]:.2f}  ", end="")
     print()
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("THIS IS EXACTLY WHAT CLIP DOES")
 print("=" * 50)
 print("""
@@ -78,7 +78,7 @@ That's it. Everything else is details.
 """)
 
 # TODO 1: Normalize vectors before dot product
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("TODO 1: NORMALIZE VECTORS (Important for CLIP)")
 print("=" * 50)
 
