@@ -26,16 +26,16 @@ print("=" * 50)
 # ANSWER: Without priors, model picks most accurate word ("zebra") 
 #         instead of most natural word ("animal")
 
-p_rare = 0.0001
+p_rare_word = 0.0001
 p_common = 0.5
-likelihood_rare = 0.95
-likelihood_common = 0.90
+likelihood_image_is_rare_word = 0.95
+likelihood_image_is_common_word = 0.90
 
-posterior_rare = likelihood_rare * p_rare
-posterior_common = likelihood_common * p_common
+posterior_image_is_rare_word = likelihood_image_is_rare_word * p_rare_word
+posterior_image_is_common_word = likelihood_image_is_common_word * p_common
 
-print(f"Rare word posterior: {posterior_rare:.6f}")
-print(f"Common word posterior: {posterior_common:.3f}")
+print(f"Rare word posterior: {posterior_image_is_rare_word:.6f}")
+print(f"Common word posterior: {posterior_image_is_common_word:.3f}")
 print("Common word wins despite lower accuracy because it's more natural")
 
 print("\n" + "=" * 50)
