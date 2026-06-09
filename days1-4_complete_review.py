@@ -94,10 +94,13 @@ print("=" * 50)
 
 A = np.array([[0.9, 0.2], [0.3, 0.8]])
 U, S, Vt = np.linalg.svd(A)
-reconstructed = U @ np.diag(S) @ Vt
-print(f"Original matrix:\\n{A}")
-print(f"Reconstructed from SVD:\\n{reconstructed.round(2)}")
+similarity_from_embeddings = U @ Vt
+similarity_from_svd = U @ np.diag(S) @ Vt
+print(f"Original matrix:\n{A}")
+print(f"Reconstructed from SVD:\n{similarity_from_svd.round(2)}")
 print("SVD proves that learning embeddings to factor similarity is mathematically sound")
+print("SVD IS NOT HOW CLIP LEARNS; it's a math proof working backwards to show that embedding matrices can build similarity matrices")
+print("The embeddings that clip learns are not equal to U and Vt, they are two matrices that together absorb the matrix S")
 
 print("\n" + "=" * 50)
 print("CONCEPT 6: GRADIENT DESCENT")
