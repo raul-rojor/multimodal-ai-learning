@@ -113,7 +113,7 @@ print("\n" + "=" * 50)
 print("EMBEDDING PROPERTIES")
 print("=" * 50)
 
-print(f"First embedding (first 10 values): {embeddings[0, :10].round(3)}")
+print(f"First embedding (first 10 values): {embeddings[0, :10].detach().numpy().round(3)}")
 print(f"Embedding mean: {embeddings.mean().item():.3f}")
 print(f"Embedding std: {embeddings.std().item():.3f}")
 
@@ -149,7 +149,7 @@ class DebugCNN(SimpleCNN):
 debug_model = DebugCNN()
 _ = debug_model(dummy_images)
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("WHAT YOU JUST BUILT")
 print("=" * 50)
 
