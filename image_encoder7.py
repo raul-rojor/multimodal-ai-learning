@@ -127,36 +127,36 @@ if __name__ == "__main__":
     dummy_images = torch.randn(batch_size, 3, 224, 224)
     print(f"Input shape: {dummy_images.shape}")
 
-with torch.no_grad():
-    embeddings = model(dummy_images)
+    with torch.no_grad():
+        embeddings = model(dummy_images)
 
-print(f"Output shape: {embeddings.shape}")
-print(f"Expected: ({batch_size}, 512) → got {embeddings.shape}")
+    print(f"Output shape: {embeddings.shape}")
+    print(f"Expected: ({batch_size}, 512) → got {embeddings.shape}")
 
-# TODO 2: Check embedding properties
-print("\n" + "=" * 50)
-print("EMBEDDING PROPERTIES")
-print("=" * 50)
+    # TODO 2: Check embedding properties
+    print("\n" + "=" * 50)
+    print("EMBEDDING PROPERTIES")
+    print("=" * 50)
 
-print(f"Embedding values (first 10 of first image): {embeddings[0, :10].cpu().numpy().round(3)}")
-print(f"Embedding norm (should be 1.0): {embeddings[0].norm().item():.3f}")
-print("(L2 normalization ensures dot product = cosine similarity)")
+    print(f"Embedding values (first 10 of first image): {embeddings[0, :10].cpu().numpy().round(3)}")
+    print(f"Embedding norm (should be 1.0): {embeddings[0].norm().item():.3f}")
+    print("(L2 normalization ensures dot product = cosine similarity)")
 
-# TODO 3: Compare similarity between two images
-print("\n" + "=" * 50)
-print("SIMILARITY BETWEEN IMAGES")
-print("=" * 50)
+    # TODO 3: Compare similarity between two images
+    print("\n" + "=" * 50)
+    print("SIMILARITY BETWEEN IMAGES")
+    print("=" * 50)
 
-# Two random images (different)
-img1 = torch.randn(1, 3, 224, 224)
-img2 = torch.randn(1, 3, 224, 224)
+    # Two random images (different)
+    img1 = torch.randn(1, 3, 224, 224)
+    img2 = torch.randn(1, 3, 224, 224)
 
-with torch.no_grad():
-    emb1 = model(img1)
-    emb2 = model(img2)
+    with torch.no_grad():
+        emb1 = model(img1)
+        emb2 = model(img2)
 
-similarity = (emb1 @ emb2.T).item()
-print(f"Similarity between two RANDOM images: {similarity:.3f}")
+    similarity = (emb1 @ emb2.T).item()
+    print(f"Similarity between two RANDOM images: {similarity:.3f}")
 print("(Lower is expected for different images)")
 print("Similar images should have similarity close to 1.0")
 
