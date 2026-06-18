@@ -300,4 +300,4 @@ if __name__ == "__main__":
     
     # Verify L2 normalization
     norms = torch.norm(embeddings, dim=1)
-    print(f"\nEmbedding norms (should all be 1.0): {norms.round(4)}")
+    print(f"\nEmbedding norms (should all be 1.0): {norms}")
