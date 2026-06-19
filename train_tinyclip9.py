@@ -128,6 +128,8 @@ def train_tinyclip(model, dataloader, num_epochs=10, lr=1e-4):
             # ==========================================
             # FORWARD PASS
             # ==========================================
+            # The batch is already arranged so image i matches text i, that's how training knows correct matches.
+            # The model uses this row/column alignment when computing contrastive loss.
             # Compute loss
             loss, similarity = model(images, tokens, mask)
             
