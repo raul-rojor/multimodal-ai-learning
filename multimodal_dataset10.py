@@ -72,9 +72,18 @@ class MultimodalDataset(Dataset):
         image = self.transform(image)
         
         caption = self.data[idx]['caption']
-        # Simple tokenizer fallback (use real tokenizer in practice)
-        token_ids = torch.randint(0, 30000, (self.max_seq_len,))
-        attention_mask = torch.ones(self.max_seq_len, dtype=torch.long)
+        # REAL TOKENIZATION (NOT RANDOM)
+        from transformers import AutoTokenizer
+        tokenizer = AutoTokenizer.from_pretrained("openai/clip-vit-base-patch32")
+        tokens = tokenizer(
+            caption,
+           padding='max_length',
+           truncation=True,
+           max_length=self.max_seq_len,
+            return_tensors='pt'
+        )
+        token_ids = tokens['input_ids'].squeeze(0)
+        attention_mask = tokens['attention_mask'].squeeze(0)
         
         return {
             'image': image,
