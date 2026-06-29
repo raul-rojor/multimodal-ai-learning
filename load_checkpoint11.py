@@ -27,11 +27,11 @@ print("=" * 50)
 
 # Configuration
 config = {
-    'embedding_dim': 512,
+    'embedding_dim': 128,
     'vocab_size': 49408,
-    'max_seq_len': 32,
-    'num_heads': 8,
-    'num_layers': 2,
+    'max_seq_len': 16,
+    'num_heads': 4,
+    'num_layers': 1,
     'temperature': 0.07,
     'checkpoint_dir': './checkpoints/',
     'device': 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -52,15 +52,14 @@ model = TinyCLIP(
 )
 
 # Load checkpoint
-checkpoint_path = os.path.join(config['checkpoint_dir'], 'final_model.pt')
+checkpoint_path = os.path.join(config['checkpoint_dir'], 'subset_model.pt')
 if os.path.exists(checkpoint_path):
-    checkpoint = torch.load(checkpoint_path, map_location=device)
-    model.load_state_dict(checkpoint['model_state_dict'])
-    print(f"Loaded checkpoint from epoch {checkpoint['epoch']+1}")
-    print(f"Loss: {checkpoint['loss']:.4f}")
+    state_dict = torch.load(checkpoint_path, map_location=device)
+    model.load_state_dict(state_dict)
+    print("Loaded subset_model.pt")
 else:
-    print(f"No checkpoint found at {checkpoint_path}")
-    print("Train the model first using train_tinyclip_real11.py")
+    print("No checkpoint found!")
+    exit()
 
 model = model.to(device)
 model.eval()
