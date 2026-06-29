@@ -66,6 +66,10 @@ class MultimodalDataset(Dataset):
         return len(self.data)
     
     def __getitem__(self, idx):
+        #DEBUG BLOCK
+        if idx == 0:
+            print(f"Loading image: {self.data[idx]['image']}")
+            print(f"Caption: {self.data[idx]['caption']}")
         img_filename = self.data[idx]['image']
         img_path = os.path.join(self.image_dir, img_filename)
         image = Image.open(img_path).convert('RGB')
