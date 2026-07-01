@@ -78,7 +78,7 @@ class MultimodalDataset(Dataset):
         caption = self.data[idx]['caption']
         # REAL TOKENIZATION (NOT RANDOM)
         from transformers import AutoTokenizer
-        tokenizer = AutoTokenizer.from_pretrained("openai/clip-vit-base-patch32")
+        tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
         tokens = tokenizer(
             caption,
            padding='max_length',
