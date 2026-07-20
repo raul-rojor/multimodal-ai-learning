@@ -42,19 +42,19 @@ config = {
     'val_image_dir': './data/coco/val2014',
     'captions_file': './data/coco/annotations/captions_train2014.json',
     'val_captions_file': './data/coco/annotations/captions_val2014.json',
-    'max_seq_len': 32,
-    'batch_size': 8,  # Reduce if out of memory
+    'max_seq_len': 16,
+    'batch_size': 4,  # Reduce if out of memory
     'num_workers': 0,  # Set to 0 for debugging, >0 for speed
     
     # Model
     'embedding_dim': 512,
     'vocab_size': 49408,  # CLIP tokenizer vocab size
-    'num_heads': 8,
-    'num_layers': 2,
+    'num_heads': 4,
+    'num_layers': 1,
     'temperature': 0.07,
     
     # Training
-    'epochs': 3,
+    'epochs': 1,
     'learning_rate': 1e-4,
     'weight_decay': 0.01,
     'save_every': 1,  # Save checkpoint every N epochs
