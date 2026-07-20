@@ -1,0 +1,18 @@
+# Ignore local data and checkpoints
+/data/
+/checkpoints/
+/logs/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Model checkpoints and large binaries
+*.pt
+*.pth
+
+# macOS
+.DS_Store
+
+# VS Code workspace settings
+.vscode/
