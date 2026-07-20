@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - WHY CNNs? (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 1: THE IMAGE PROBLEM")
-print("=" * 60)
-
 """
 WHY IMAGES NEED CNNs
-File: why_cnns.py
 
 THE PROBLEM WITH RAW PIXELS:
   A 224×224 color image has 224 × 224 × 3 = 150,528 numbers.

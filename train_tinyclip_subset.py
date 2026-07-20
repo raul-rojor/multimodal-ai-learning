@@ -1,6 +1,5 @@
 """
 TRAIN ON SMALL SUBSET - Mac Friendly
-File: train_tinyclip_subset.py
 
 Trains on only 1000 images. Runs in ~30-60 minutes on CPU.
 """

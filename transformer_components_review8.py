@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - TRANSFORMER COMPONENTS REVIEW (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 1: TRANSFORMER COMPONENTS REVIEW")
-print("=" * 60)
-
 """
 TRANSFORMER COMPONENTS - QUICK REVIEW
-File: transformer_components_review.py
 
 Four operations that turn text into embeddings:
 """

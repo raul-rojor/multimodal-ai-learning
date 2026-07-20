@@ -1,10 +1,11 @@
-# ============================================
-# INDEPENDENT TOPIC 2: GRADIENT DESCENT INTUITION
-# ============================================
+"""
+GRADIENT DESCENT ON A SIMPLE PROBLEM
 
-print("\n" + "=" * 60)
-print("TOPIC 2: GRADIENT DESCENT INTUITION (30 min)")
-print("=" * 60)
+Problem: Find weight that makes prediction = target
+Target: when input=1, we want output=1
+Prediction = weight * input (no bias for simplicity)
+Loss = (prediction - target)²  (mean squared error)
+"""
 
 print("""
 WHAT GRADIENT DESCENT DOES:
@@ -23,17 +24,6 @@ WHERE:
     learning_rate = how big your steps are (too big = overshoot, too small = slow)
     gradient = which direction is uphill (negative gradient = downhill)
 """)
-
-# File to create: gradient_descent_demo.py
-"""
-GRADIENT DESCENT ON A SIMPLE PROBLEM
-Save as: gradient_descent_demo.py
-
-Problem: Find weight that makes prediction = target
-Target: when input=1, we want output=1
-Prediction = weight * input (no bias for simplicity)
-Loss = (prediction - target)²  (mean squared error)
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -72,7 +62,7 @@ for step in range(20):
     history.append(weight)
     print(f"Step {step+1:2d}: weight={weight:.4f}, loss={current_loss:.6f}")
 
-print(f"\\nFinal weight: {weight:.4f} (should be close to 1.0)")
+print(f"\nFinal weight: {weight:.4f} (should be close to 1.0)")
 
 # Visualize the path
 plt.plot(range(1, 21), history, 'bo-')

@@ -1,14 +1,5 @@
-# ============================================
-# PART 4: AFTERNOON - BUILD CNN IN PYTORCH (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("BUILDING A CNN IN PYTORCH")
-print("=" * 60)
-
 """
 SIMPLE CNN FROM SCRATCH IN PYTORCH
-File: simple_cnn_pytorch.py
 
 This is your first neural network that actually processes images!
 """

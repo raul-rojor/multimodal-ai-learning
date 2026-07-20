@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - EMBEDDING VISUALIZATION (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: EMBEDDING VISUALIZATION")
-print("=" * 60)
-
 """
 EMBEDDING VISUALIZATION WITH PCA/t-SNE
-File: visualize_embeddings.py
 
 Visualize the embedding space to see clustering.
 """

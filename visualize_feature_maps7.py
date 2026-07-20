@@ -1,14 +1,5 @@
-# ============================================
-# PART 4: AFTERNOON - VISUALIZE FEATURE MAPS (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON PART 2: VISUALIZING CNN FEATURE MAPS")
-print("=" * 60)
-
 """
 VISUALIZING WHAT THE CNN SEES
-File: visualize_feature_maps.py
 
 Run this to see how different layers detect different patterns.
 """

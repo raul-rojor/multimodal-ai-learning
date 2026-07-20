@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - ZERO-SHOT CLASSIFICATION (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: ZERO-SHOT CLASSIFICATION")
-print("=" * 60)
-
 """
 ZERO-SHOT CLASSIFICATION EVALUATION
-File: zero_shot_eval.py
 
 Evaluate zero-shot classification accuracy on COCO categories.
 """
@@ -144,7 +135,7 @@ def zero_shot_classify(model, dataloader, prompt_ids, prompt_mask, device):
     
     return all_predictions
 
-print("\\nRunning zero-shot classification...")
+print("\nRunning zero-shot classification...")
 predictions = zero_shot_classify(model, val_loader, prompt_ids, prompt_mask, device)
 
 # Since we don't have ground truth class labels for each image,

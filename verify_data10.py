@@ -1,6 +1,5 @@
 """
 VERIFY DATA DOWNLOAD
-File: verify_data.py
 """
 
 import os

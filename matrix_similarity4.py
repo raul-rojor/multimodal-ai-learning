@@ -1,10 +1,5 @@
-print("\n" + "=" * 60)
-print("MORNING PART 1: MATRIX MULTIPLICATION = SIMILARITY")
-print("=" * 60)
-
 """
 MATRIX MULTIPLICATION & SIMILARITY
-File: matrix_similarity.py
 
 KEY INSIGHT: 
   Matrix multiplication = computing similarities between vectors

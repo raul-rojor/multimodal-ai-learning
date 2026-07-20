@@ -1,14 +1,5 @@
-# ============================================
-# PART 5: EVENING PRACTICE (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: CONDITIONAL PROBABILITY DRILL")
-print("=" * 60)
-
 """
 EVENING PRACTICE: CONDITIONAL PROBABILITY DRILL
-File: evening_conditional_drill.py
 
 Complete these 3 TODOs without peeking at morning code.
 """

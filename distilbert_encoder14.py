@@ -1,11 +1,3 @@
-# ============================================
-# PART 2: TUESDAY - DISTILBERT TEXT ENCODER
-# ============================================
-
-print("\n" + "=" * 60)
-print("DISTILBERT TEXT ENCODER")
-print("=" * 60)
-
 """
 DISTILBERT TEXT ENCODER
 

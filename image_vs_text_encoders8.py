@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - COMPARE IMAGE AND TEXT ENCODERS (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: COMPARING IMAGE AND TEXT ENCODERS")
-print("=" * 60)
-
 """
 COMPARING IMAGE AND TEXT ENCODERS
-File: compare_encoders.py
 
 Both encoders output 512-dim embeddings. Now they can be compared!
 """

@@ -1,11 +1,3 @@
-# ============================================
-# PART 5: EVENING PRACTICE (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: SVD PRACTICE WITH REAL DATA")
-print("=" * 60)
-
 """
 SVD ON REAL IMAGES (MNIST digits)
 File: svd_images.py
@@ -58,7 +50,7 @@ for k in [1, 2, 4, 8]:
 plt.tight_layout()
 plt.show()
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("WHAT YOU JUST LEARNED")
 print("=" * 50)
 print("""

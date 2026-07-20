@@ -1,10 +1,6 @@
-# ============================================
-# INDEPENDENT TOPIC 1: NEURAL NETWORK FORWARD PASS
-# ============================================
-
-print("\n" + "=" * 60)
-print("TOPIC 1: NEURAL NETWORK FORWARD PASS (45 min)")
-print("=" * 60)
+"""
+SIMPLE NEURON FROM SCRATCH
+"""
 
 print("""
 WHAT YOU'RE BUILDING:
@@ -19,12 +15,6 @@ WHERE:
     bias = baseline output when input is zero
     activation = a function that squashes output (e.g., sigmoid, ReLU)
 """)
-
-# File to create: simple_neuron.py
-"""
-SIMPLE NEURON FROM SCRATCH
-Save as: simple_neuron.py
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt

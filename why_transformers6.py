@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - WHY TEXT IS DIFFERENT (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 1: THE TEXT PROBLEM")
-print("=" * 60)
-
 """
 WHY TEXT NEEDS TRANSFORMERS
-File: why_transformers.py
 
 THE PROBLEM WITH RAW TEXT:
   - Variable length: "cat" (1 word) vs "the fluffy cat sat on the mat" (7 words)

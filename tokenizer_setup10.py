@@ -1,6 +1,5 @@
 """
 TOKENIZER SETUP
-File: tokenizer_setup.py
 """
 
 print("=" * 50)

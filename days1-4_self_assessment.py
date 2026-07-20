@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - SELF-ASSESSMENT QUIZ (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: SELF-ASSESSMENT QUIZ")
-print("=" * 60)
-
 """
 WEEK 1 SELF-ASSESSMENT
-File: week1_self_assessment.py
 
 Answer each question honestly. No peeking at answers until you write yours.
 """

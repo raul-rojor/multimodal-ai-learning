@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - RESULTS SUMMARY (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING: WEEK 3 RESULTS SUMMARY")
-print("=" * 60)
-
 """
 WEEK 3 RESULTS SUMMARY
-File: week3_results_summary.py
 
 Compile all results and interpret them.
 """

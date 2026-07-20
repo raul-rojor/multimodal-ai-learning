@@ -1,14 +1,5 @@
-# ============================================
-# PART 5: EVENING - TEXT ENCODER VS IMAGE ENCODER (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: SIDE-BY-SIDE COMPARISON")
-print("=" * 60)
-
 """
 SIDE-BY-SIDE: IMAGE ENCODER VS TEXT ENCODER
-File: encoder_comparison.py
 
 See how both encoders produce 512-dim embeddings, but from different inputs.
 """

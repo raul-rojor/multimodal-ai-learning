@@ -1,6 +1,5 @@
 """
 DOWNLOAD DATA
-File: download_data.py
 
 Download COCO captions dataset manually.
 """

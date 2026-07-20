@@ -1,11 +1,3 @@
-# ============================================
-# PART 2: MORNING - COMPLETE TEXT ENCODER (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: COMPLETE TEXT ENCODER")
-print("=" * 60)
-
 """
 COMPLETE TEXT ENCODER FOR MULTIMODAL AI
 File: text_encoder.py

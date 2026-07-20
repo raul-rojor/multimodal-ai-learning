@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - INFERENCE (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: INFERENCE AND ZERO-SHOT CLASSIFICATION")
-print("=" * 60)
-
 """
 TINYCLIP INFERENCE
-File: inference_tinyclip.py
 
 Using the trained model for:
   1. Image → Text retrieval (find caption for an image)

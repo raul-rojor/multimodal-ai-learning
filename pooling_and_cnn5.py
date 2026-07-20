@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - POOLING & ARCHITECTURE (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: POOLING AND CNN ARCHITECTURE")
-print("=" * 60)
-
 """
 POOLING AND BUILDING A CNN
-File: pooling_and_cnn.py
 
 Pooling: Reduces spatial size while keeping important information.
 Common pooling: Max pooling (take maximum in each region)

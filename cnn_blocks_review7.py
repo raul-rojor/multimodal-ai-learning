@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - CNN REVIEW (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 1: CNN BUILDING BLOCKS REVIEW")
-print("=" * 60)
-
 """
 CNN BUILDING BLOCKS - QUICK REVIEW
-File: cnn_blocks_review.py
 
 Four operations that turn images into embeddings:
 """

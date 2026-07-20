@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - TOKENIZATION & EMBEDDINGS (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: TOKENIZATION AND EMBEDDINGS")
-print("=" * 60)
-
 """
 TOKENIZATION AND EMBEDDING LAYERS
-File: tokenization_and_embeddings.py
 
 Step 1: Convert text to numbers (tokenization)
 Step 2: Convert numbers to vectors (embedding layer)

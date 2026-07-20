@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - POSITIONAL ENCODING (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON PART 1: POSITIONAL ENCODING")
-print("=" * 60)
-
 """
 POSITIONAL ENCODING - ADDING WORD ORDER
-File: positional_encoding.py
 
 PROBLEM: Embedding layer treats "cat sat" same as "sat cat" (same bag of vectors)
 SOLUTION: Add positional information so model knows word order

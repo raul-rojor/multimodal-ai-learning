@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING CONTINUED - CHAIN RULE & TOTAL PROBABILITY (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: CHAIN RULE & LAW OF TOTAL PROBABILITY")
-print("=" * 60)
-
 """
 CHAIN RULE & LAW OF TOTAL PROBABILITY
-File: probability_rules.py
 
 TWO CRITICAL RULES FOR MULTIMODAL AI:
 
@@ -44,13 +35,13 @@ print(f"P(Not Cat, Furry) = {p_not_cat_and_furry}")
 
 # Total probability of seeing Furry
 p_furry = p_cat_and_furry + p_not_cat_and_furry
-print(f"\\nP(Furry) = {p_furry}")
+print(f"\nP(Furry) = {p_furry}")
 
 # Now reverse: If we see Furry, what's P(Cat|Furry)?
 p_cat_given_furry = p_cat_and_furry / p_furry
-print(f"\\nP(Cat | Furry) = {p_cat_given_furry:.3f}")
+print(f"\nP(Cat | Furry) = {p_cat_given_furry:.3f}")
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("RULE 2: LAW OF TOTAL PROBABILITY")
 print("=" * 50)
 
@@ -92,7 +83,7 @@ print(f"P(Disease|Positive) = {p_disease_given_pos:.4f} (only {p_disease_given_p
 # TODO 2: Chain rule for three variables
 # ============================================
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("CHAIN RULE FOR 3 VARIABLES")
 print("=" * 50)
 
@@ -111,7 +102,7 @@ p_all = p_indoor_given_cat_dark * p_dark_given_cat * p_cat
 print(f"P(Cat, Dark, Indoor) = {p_all:.4f}")
 print(f"Interpretation: {p_all*100:.2f}% of all images are cats in dark indoor settings")
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("WHY THIS MATTERS FOR MULTIMODAL AI")
 print("=" * 50)
 print("""

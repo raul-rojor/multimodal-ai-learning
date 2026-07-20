@@ -1,14 +1,5 @@
-# ============================================
-# PART 4: AFTERNOON - SELF-ATTENTION (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON PART 2: SELF-ATTENTION")
-print("=" * 60)
-
 """
 SELF-ATTENTION FROM SCRATCH
-File: self_attention.py
 
 The core innovation of Transformers: Every word looks at every other word.
 """

@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - EIGENVALUES INTUITION (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: EIGENVALUES - WHAT STAYS THE SAME")
-print("=" * 60)
-
 """
 EIGENVALUES FOR MULTIMODAL AI
-File: eigenvalues_intro.py
 
 WHAT EIGENVALUES TELL YOU:
   When you multiply a matrix by a vector, most vectors change direction.
@@ -113,7 +104,7 @@ print("""
    - Modern architectures carefully control eigenvalues
 """)
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("SIMPLE RULE FOR MULTIMODAL AI")
 print("=" * 50)
 print("""

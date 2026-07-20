@@ -1,7 +1,6 @@
 """
-TRAIN IMPROVED TINYCLIP
-
-Train with ResNet + DistilBERT on larger subset.
+TRAIN SCALED TINYCLIP
+Train on 20,000 images for 10 epochs.
 """
 
 import torch
@@ -10,21 +9,19 @@ from torch.utils.data import DataLoader, Subset
 from tqdm import tqdm
 from multimodal_dataset10 import MultimodalDataset
 from tinyclip_improved15 import TinyCLIPImproved
-from transformers import AutoTokenizer
 
 print("=" * 50)
-print("TRAINING IMPROVED TINYCLIP")
+print("TRAINING SCALED TINYCLIP")
 print("=" * 50)
 
-# Configuration
 config = {
     'image_dir': './data/coco/train2014',
     'captions_file': './data/coco/annotations/captions_train2014.json',
     'max_seq_len': 16,
     'batch_size': 8,
     'embedding_dim': 128,
-    'num_samples': 5000,
-    'epochs': 5,
+    'num_samples': 20000,  # More data
+    'epochs': 10,          # More epochs
     'learning_rate': 1e-4,
     'checkpoint_dir': './checkpoints/',
     'device': 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -82,5 +79,5 @@ for epoch in range(config['epochs']):
     print(f"Epoch {epoch+1} avg loss: {avg_loss:.4f}")
 
 # Save
-torch.save(model.state_dict(), './checkpoints/improved_model.pt')
-print("✅ Improved model saved to ./checkpoints/improved_model.pt")
+torch.save(model.state_dict(), './checkpoints/scaled_model.pt')
+print("✅ Scaled model saved to ./checkpoints/scaled_model.pt")

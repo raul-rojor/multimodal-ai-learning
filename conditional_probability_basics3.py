@@ -1,15 +1,5 @@
-# ============================================
-# PART 1: MORNING - PROBABILITY DEEP DIVE (1.5 hours)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING: CONDITIONAL PROBABILITY FROM SCRATCH")
-print("=" * 60)
-
-# File 1: conditional_probability_basics.py
 """
 CONDITIONAL PROBABILITY BASICS
-File: conditional_probability_basics.py
 
 WHAT YOU'RE LEARNING:
   P(A|B) = "Probability of A given that B happened"
@@ -105,7 +95,7 @@ print(f"\nNOTE: P(Umbrella|Rainy)={p_umbrella_given_rainy:.3f} ≠ P(Rainy|Umbre
 
 bayes_result = (p_umbrella_given_rainy * p_rainy) / p_umbrella
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("VERIFYING BAYES' RULE")
 print("=" * 50)
 print(f"Direct calculation P(Rainy|Umbrella) = {p_rainy_given_umbrella:.3f}")
@@ -144,7 +134,7 @@ plt.ylim(0, 1)
 plt.tight_layout()
 plt.show()
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("KEY INSIGHTS")
 print("=" * 50)
 print("""

@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - TINYCLIP MODEL (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING: TINYCLIP ARCHITECTURE")
-print("=" * 60)
-
 """
 TINYCLIP: COMPLETE MULTIMODAL MODEL
-File: tinyclip.py
 
 This is YOUR multimodal model. It combines:
   1. Image encoder (CNN) → image embeddings

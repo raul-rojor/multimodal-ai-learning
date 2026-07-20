@@ -1,11 +1,3 @@
-# ============================================
-# PART 1: MONDAY - RESNET IMAGE ENCODER
-# ============================================
-
-print("\n" + "=" * 60)
-print("RESNET IMAGE ENCODER")
-print("=" * 60)
-
 """
 RESNET IMAGE ENCODER
 

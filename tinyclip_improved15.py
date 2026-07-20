@@ -1,11 +1,3 @@
-# ============================================
-# PART 3: WEDNESDAY - TINYCLIP WITH PRE-TRAINED ENCODERS
-# ============================================
-
-print("\n" + "=" * 60)
-print("WEDNESDAY: TINYCLIP WITH PRE-TRAINED ENCODERS")
-print("=" * 60)
-
 """
 TINYCLIP WITH PRE-TRAINED ENCODERS
 

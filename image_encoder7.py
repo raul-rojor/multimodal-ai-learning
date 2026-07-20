@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - BUILD IMAGE ENCODER (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: COMPLETE IMAGE ENCODER")
-print("=" * 60)
-
 """
 COMPLETE IMAGE ENCODER FOR MULTIMODAL AI
-File: image_encoder.py
 
 This CNN outputs 512-dim embeddings that can be compared with text embeddings.
 """

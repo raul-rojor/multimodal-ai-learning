@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - INDEPENDENT AI TOPICS (2-3 hours)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: MULTIMODAL PROBABILITY & SIMPLE CLASSIFIER")
-print("=" * 60)
-
 """
 SIMPLE MULTIMODAL CLASSIFIER USING BAYES' RULE
-File: multimodal_bayes_classifier.py
 
 WHAT YOU'RE BUILDING:
 A classifier that uses BOTH image features AND text features
@@ -121,7 +112,7 @@ for bar, prob in zip(bars, probs):
 
 plt.show()
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("KEY INSIGHTS")
 print("=" * 50)
 print("""

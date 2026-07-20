@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - TRAINING LOOP (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: TRAINING LOOP")
-print("=" * 60)
-
 """
 TRAINING TINYCLIP
-File: train_tinyclip.py
 
 Complete training loop for TinyCLIP.
 Trains the model on (image, text) pairs.
