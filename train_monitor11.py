@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - MONITORING AND LOGGING (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: MONITORING AND LOGGING")
-print("=" * 60)
-
 """
 TRAINING MONITORING UTILITIES
-File: train_monitor.py
 
 Helpers to monitor training progress.
 """

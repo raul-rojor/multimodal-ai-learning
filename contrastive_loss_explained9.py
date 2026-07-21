@@ -1,14 +1,5 @@
-# ============================================
-# PART 4: AFTERNOON - UNDERSTAND THE LOSS (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON PART 2: UNDERSTANDING CONTRASTIVE LOSS")
-print("=" * 60)
-
 """
 UNDERSTANDING CONTRASTIVE LOSS
-File: contrastive_loss_explained.py
 
 Visualizing how contrastive loss works.
 """

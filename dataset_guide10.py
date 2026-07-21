@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - CHOOSE AND DOWNLOAD DATA (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 1: DATASET OPTIONS")
-print("=" * 60)
-
 """
 DATASET COMPARISON AND DOWNLOAD GUIDE
-File: dataset_guide.py
 
 Choose the right dataset for your TinyCLIP training.
 """

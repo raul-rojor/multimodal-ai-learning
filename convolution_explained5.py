@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - CONVOLUTION EXPLAINED (45 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: CONVOLUTION OPERATION")
-print("=" * 60)
-
 """
 CONVOLUTION FROM SCRATCH
-File: convolution_explained.py
 
 What convolution does:
   Slide a small filter (kernel) over the image.

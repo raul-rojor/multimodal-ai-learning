@@ -1,14 +1,5 @@
-# ============================================
-# PART 2: MORNING - LOAD CHECKPOINT AND INFERENCE (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING PART 2: LOAD CHECKPOINT AND INFERENCE")
-print("=" * 60)
-
 """
 LOAD CHECKPOINT AND RUN INFERENCE
-File: load_checkpoint.py
 
 Load a trained model and run inference on new images/texts.
 """

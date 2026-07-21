@@ -1,6 +1,5 @@
 """
 MULTIMODAL DATASET CLASS
-File: multimodal_dataset.py
 """
 
 import torch

@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - COMPLETE MATH REVIEW (1.5 hours)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING: MASTER REVIEW - ALL CONCEPTS")
-print("=" * 60)
-
 """
 WEEK 1 COMPLETE MATH REVIEW
-File: days1-4_complete_review.py
 
 Run this file. Answer each QUESTION before the reveal.
 """

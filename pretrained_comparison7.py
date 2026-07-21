@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - COMPARE WITH PRE-TRAINED (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: COMPARE WITH PRE-TRAINED RESNET")
-print("=" * 60)
- 
 """
 COMPARING WITH PRE-TRAINED RESNET
-File: pretrained_comparison.py
 
 Why use pre-trained? They've already learned useful features from millions of images.
 """

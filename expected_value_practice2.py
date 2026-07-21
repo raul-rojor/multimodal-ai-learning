@@ -1,6 +1,5 @@
 """
-EVENING PRACTICE: expected_value_practice.py
-Complete these 3 TODOs after CodePath.
+EXPECTED VALUE PRACTICE
 """
 
 import numpy as np

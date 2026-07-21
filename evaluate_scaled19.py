@@ -1,7 +1,5 @@
 """
-EVALUATE IMPROVED TINYCLIP
-
-Compare improved model results to Week 3.
+EVALUATE SCALED TINYCLIP
 """
 
 import torch
@@ -11,7 +9,7 @@ from multimodal_dataset10 import MultimodalDataset
 from tinyclip_improved15 import TinyCLIPImproved
 
 print("=" * 50)
-print("EVALUATING IMPROVED MODEL")
+print("EVALUATING SCALED MODEL")
 print("=" * 50)
 
 config = {
@@ -20,7 +18,7 @@ config = {
     'max_seq_len': 16,
     'batch_size': 32,
     'embedding_dim': 128,
-    'num_samples': 500,
+    'num_samples': 1000,
     'checkpoint_dir': './checkpoints/',
     'device': 'cuda' if torch.cuda.is_available() else 'cpu'
 }
@@ -44,7 +42,7 @@ model = TinyCLIPImproved(
     embedding_dim=config['embedding_dim'],
     max_seq_len=config['max_seq_len']
 )
-model.load_state_dict(torch.load('./checkpoints/improved_model.pt', map_location=device))
+model.load_state_dict(torch.load('./checkpoints/scaled_model.pt', map_location=device))
 model = model.to(device)
 model.eval()
 
@@ -69,7 +67,6 @@ text_embs = torch.cat(all_text_embs)
 
 similarity = image_embs @ text_embs.T
 
-# Recall@K
 def recall_at_k(sim, labels, k):
     top_k = sim.argsort(dim=1, descending=True)[:, :k]
     correct = (top_k == labels.unsqueeze(1)).any(dim=1)
@@ -78,14 +75,14 @@ def recall_at_k(sim, labels, k):
 labels = torch.arange(len(image_embs))
 
 print("\n" + "=" * 50)
-print("RESULTS")
+print("SCALED MODEL RESULTS")
 print("=" * 50)
 
 for k in [1, 5, 10]:
     r = recall_at_k(similarity, labels, k)
     print(f"Recall@{k}: {r:.4f}")
 
-print("\nCOMPARISON TO WEEK 3 (Custom CNN + Transformer):")
-print("  Recall@1: 0.0000 → ? (Improved should be higher)")
-print("  Recall@5: 0.0080 → ?")
-print("  Recall@10: 0.0160 → ?")
+print("\nCOMPARISON:")
+print(f"  Week 3 (1k images, 3 epochs): Recall@1 = 0.0000")
+print(f"  Week 4 (5k images, 5 epochs): Recall@1 = ?")
+print(f"  Week 5 (20k images, 10 epochs): Recall@1 = ?")

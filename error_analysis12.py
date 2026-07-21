@@ -1,14 +1,5 @@
-# ============================================
-# PART 4: EVENING - ERROR ANALYSIS (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: ERROR ANALYSIS")
-print("=" * 60)
-
 """
 ERROR ANALYSIS
-File: error_analysis.py
 
 Find where the model fails and why.
 """

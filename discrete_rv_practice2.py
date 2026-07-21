@@ -1,6 +1,5 @@
 """
 DISCRETE RANDOM VARIABLES + EXPECTED VALUE - MORNING SCRIPT
-Save as: discrete_rv_practice.py
 Complete each TODO. Run after each TODO to check your work.
 """
 

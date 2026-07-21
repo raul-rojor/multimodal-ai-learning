@@ -1,6 +1,5 @@
 """
 DATA READY CHECKLIST
-File: data_ready_checklist.py
 """
 
 import os

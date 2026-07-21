@@ -1,14 +1,5 @@
-# ============================================
-# PART 5: EVENING - VISUALIZE FILTERS (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: VISUALIZING CNN FILTERS")
-print("=" * 60)
-
 """
 VISUALIZING CNN FILTERS
-File: visualize_cnn_filters.py
 
 See what the CNN actually learns to detect.
 """

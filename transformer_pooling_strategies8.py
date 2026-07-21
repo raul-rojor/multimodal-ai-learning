@@ -1,14 +1,5 @@
-# ============================================
-# PART 4: AFTERNOON - UNDERSTANDING POOLING (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON PART 2: POOLING STRATEGIES EXPLAINED")
-print("=" * 60)
-
 """
 UNDERSTANDING POOLING STRATEGIES
-File: pooling_strategies.py
 
 How do we go from (seq_len, 512) to a single (512) embedding (i.e., from vectors each representing a token to 
 a single vector representing the entire text sequence)?

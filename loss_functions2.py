@@ -1,10 +1,6 @@
-# ============================================
-# INDEPENDENT TOPIC 3: LOSS FUNCTIONS
-# ============================================
-
-print("\n" + "=" * 60)
-print("TOPIC 3: LOSS FUNCTIONS (30 min)")
-print("=" * 60)
+"""
+LOSS FUNCTIONS FROM SCRATCH
+"""
 
 print("""
 WHAT A LOSS FUNCTION DOES:
@@ -26,12 +22,6 @@ WHY CROSS-ENTROPY FOR MULTIMODAL:
    CLIP uses cross-entropy because it's comparing distributions
    (image should match its correct text with high probability)
 """)
-
-# File to create: loss_functions.py
-"""
-LOSS FUNCTIONS FROM SCRATCH
-Save as: loss_functions.py
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt

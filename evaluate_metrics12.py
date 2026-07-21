@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - RETRIEVAL METRICS (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING: RETRIEVAL METRICS")
-print("=" * 60)
-
 """
 EVALUATION METRICS FOR TINYCLIP
-File: evaluate_metrics.py
 
 Compute retrieval metrics:
   - Recall@K: Fraction of times correct item is in top-K predictions

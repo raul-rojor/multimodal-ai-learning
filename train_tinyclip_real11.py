@@ -1,14 +1,5 @@
-# ============================================
-# PART 1: MORNING - COMPLETE TRAINING SCRIPT (1.5 hours)
-# ============================================
-
-print("\n" + "=" * 60)
-print("MORNING: TRAIN_TINYCLIP_REAL.PY")
-print("=" * 60)
-
 """
 TRAIN TINYCLIP ON REAL DATA
-File: train_tinyclip_real.py
 
 Complete training pipeline for TinyCLIP using COCO dataset.
 """

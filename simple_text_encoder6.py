@@ -1,14 +1,5 @@
-# ============================================
-# PART 5: EVENING - BUILD TEXT ENCODER (1 hour)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: BUILD TEXT ENCODER IN PYTORCH")
-print("=" * 60)
-
 """
 SIMPLE TEXT ENCODER IN PYTORCH
-File: simple_text_encoder.py
 
 This is your text encoder that outputs embeddings for multimodal matching.
 """

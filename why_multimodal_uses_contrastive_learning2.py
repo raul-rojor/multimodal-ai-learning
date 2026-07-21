@@ -1,10 +1,6 @@
-# ============================================
-# INDEPENDENT TOPIC 4: WHY MULTIMODAL USES CONTRASTIVE LEARNING
-# ============================================
-
-print("\n" + "=" * 60)
-print("TOPIC 4: CONTRASTIVE LEARNING (15 min)")
-print("=" * 60)
+"""
+TOPIC 4: CONTRASTIVE LEARNING
+"""
 
 print("""
 WHAT CONTRASTIVE LEARNING DOES:

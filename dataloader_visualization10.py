@@ -1,6 +1,5 @@
 """
 DATA LOADER AND VISUALIZATION
-File: dataloader_visualization.py
 """
 
 import torch

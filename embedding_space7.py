@@ -1,14 +1,5 @@
-# ============================================
-# PART 5: EVENING - UNDERSTAND EMBEDDING SPACE (30 min)
-# ============================================
-
-print("\n" + "=" * 60)
-print("EVENING: UNDERSTANDING THE EMBEDDING SPACE")
-print("=" * 60)
-
 """
 UNDERSTANDING THE 512-DIM EMBEDDING SPACE
-File: embedding_space.py
 
 Your image encoder maps 224×224×3 = 150,528 numbers → 512 numbers.
 Why 512? And what do those numbers mean?

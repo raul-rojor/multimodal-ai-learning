@@ -1,14 +1,5 @@
-# ============================================
-# PART 3: AFTERNOON - SVD (The Core of CLIP)
-# ============================================
-
-print("\n" + "=" * 60)
-print("AFTERNOON: SVD - SINGULAR VALUE DECOMPOSITION")
-print("=" * 60)
-
 """
 SVD: THE MATH BEHIND CLIP EMBEDDINGS
-File: svd_for_multimodal.py
 
 WHAT IS SVD?
   Any matrix can be factored into 3 parts: A = U @ S @ V.T
@@ -62,7 +53,7 @@ print(A_reconstructed.round(2))
 # TODO 1: Use SVD to create embeddings
 # ============================================
 
-print("\\n" + "=" * 50)
+print("\n" + "=" * 50)
 print("USING SVD TO CREATE EMBEDDINGS")
 print("=" * 50)
 
