@@ -9,7 +9,6 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Subset
 import os
-import matplotlib.pyplot as plt
 from tqdm import tqdm
 from multimodal_dataset10 import MultimodalDataset
 from tinyclip9 import TinyCLIP
@@ -24,8 +23,8 @@ print("=" * 50)
 # ==========================================
 
 config = {
-    'image_dir': './data/coco/train2014',
-    'captions_file': './data/coco/annotations/captions_train2014.json',
+    'image_dir': './data/coco/val2014',
+    'captions_file': './data/coco/annotations/captions_val2014.json',
     'max_seq_len': 16,
     'batch_size': 4,
     'num_workers': 0,
@@ -132,13 +131,5 @@ for epoch in range(config['epochs']):
 
 torch.save(model.state_dict(), './checkpoints/subset_model.pt')
 print("\nModel saved to ./checkpoints/subset_model.pt")
-
-# Plot loss
-plt.plot(losses)
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.title('Training Loss (Subset)')
-plt.savefig('./logs/subset_loss.png')
-plt.show()
 
 print("\n✅ Training complete on subset!")

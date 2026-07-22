@@ -141,8 +141,29 @@ predictions = zero_shot_classify(model, val_loader, prompt_ids, prompt_mask, dev
 # Since we don't have ground truth class labels for each image,
 # we can't compute exact accuracy. This is a demonstration of the pipeline.
 
-print(f"Predictions for first 10 images: {predictions[:10]}")
-print(f"Corresponding class names: {[coco_classes[p] for p in predictions[:10]]}")
+# Print results
+print("\n" + "=" * 50)
+print("ZERO-SHOT CLASSIFICATION RESULTS (CUSTOM MODEL)")
+print("=" * 50)
+
+# Get top-3 predictions with confidence scores
+with torch.no_grad():
+    text_embs = model.text_encoder(prompt_ids, prompt_mask)
+    
+    # Get first batch of images
+    batch = next(iter(val_loader))
+    images = batch['image'].to(device)
+    image_embs = model.image_encoder(images)
+    similarities = image_embs @ text_embs.T
+    top_probs, top_indices = similarities.softmax(dim=1).topk(3, dim=1)
+
+# Print top-3 predictions for first 5 images
+for i in range(min(5, len(images))):
+    print(f"\nImage {i+1}:")
+    for j in range(3):
+        cls = coco_classes[top_indices[i][j].item()]
+        conf = f"{top_probs[i][j].item()*100:.1f}%"
+        print(f"  {j+1}. {cls} ({conf})")
 
 print("\n" + "=" * 50)
 print("ZERO-SHOT CLASSIFICATION OVERVIEW")

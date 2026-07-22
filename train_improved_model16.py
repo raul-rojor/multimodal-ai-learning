@@ -18,8 +18,8 @@ print("=" * 50)
 
 # Configuration
 config = {
-    'image_dir': './data/coco/train2014',
-    'captions_file': './data/coco/annotations/captions_train2014.json',
+    'image_dir': './data/coco/val2014',
+    'captions_file': './data/coco/annotations/captions_val2014.json',
     'max_seq_len': 16,
     'batch_size': 8,
     'embedding_dim': 128,
