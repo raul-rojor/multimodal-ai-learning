@@ -77,6 +77,17 @@ def recall_at_k(sim, labels, k):
 
 labels = torch.arange(len(image_embs))
 
+# MRR calculation
+def mean_reciprocal_rank(sim, labels):
+    ranks = []
+    for i in range(sim.shape[0]):
+        sorted_indices = sim[i].argsort(descending=True)
+        rank = (sorted_indices == labels[i]).nonzero(as_tuple=True)[0].item() + 1
+        ranks.append(rank)
+    return (1.0 / torch.tensor(ranks)).mean().item()
+
+mrr = mean_reciprocal_rank(similarity, labels)
+
 print("\n" + "=" * 50)
 print("RESULTS")
 print("=" * 50)
@@ -87,5 +98,6 @@ for k in [1, 5, 10]:
 
 print("\nCOMPARISON TO WEEK 3 (Custom CNN + Transformer):")
 print("  Recall@1: 0.0000 → ? (Improved should be higher)")
-print("  Recall@5: 0.0080 → ?")
-print("  Recall@10: 0.0160 → ?")
+print("  Recall@5: 0.0120 → ?")
+print("  Recall@10: 0.0220 → ?")
+print(f"MRR: {mrr:.4f}")
