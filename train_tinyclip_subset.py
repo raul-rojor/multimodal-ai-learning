@@ -26,17 +26,17 @@ config = {
     'image_dir': './data/coco/val2014',
     'captions_file': './data/coco/annotations/captions_val2014.json',
     'max_seq_len': 16,
-    'batch_size': 4,
+    'batch_size': 8,
     'num_workers': 0,
     'embedding_dim': 128,
     'vocab_size': 49408,
     'num_heads': 4,
     'num_layers': 1,
     'temperature': 0.07,
-    'epochs': 3,
+    'epochs': 5,
     'learning_rate': 1e-4,
     'weight_decay': 0.01,
-    'num_samples': 1000,  # ONLY 1000 IMAGES
+    'num_samples': 5000,
     'checkpoint_dir': './checkpoints/',
     'device': 'cpu'
 }
@@ -129,7 +129,7 @@ for epoch in range(config['epochs']):
 # SAVE
 # ==========================================
 
-torch.save(model.state_dict(), './checkpoints/subset_model.pt')
-print("\nModel saved to ./checkpoints/subset_model.pt")
+torch.save(model.state_dict(), './checkpoints/custom_model.pt')
+print("\nModel saved to ./checkpoints/custom_model.pt")
 
 print("\n✅ Training complete on subset!")
