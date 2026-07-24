@@ -49,10 +49,10 @@ model = TinyCLIP(
     temperature=config['temperature']
 )
 
-checkpoint_path = os.path.join(config['checkpoint_dir'], 'subset_model.pt')
+checkpoint_path = os.path.join(config['checkpoint_dir'], 'custom_model.pt')
 if os.path.exists(checkpoint_path):
     model.load_state_dict(torch.load(checkpoint_path, map_location=device))
-    print("Loaded subset_model.pt")
+    print("Loaded custom_model.pt")
 else:
     print("No checkpoint found!")
     exit()
