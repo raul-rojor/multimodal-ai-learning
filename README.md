@@ -6,6 +6,12 @@ pairs from the COCO dataset.
 
 ---
 
+## Live Demo
+
+Try it here: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://multimodal-ai-learning-rojo.streamlit.app)
+
+---
+
 ## What I Built
 
 - **Custom model** - CNN (image encoder) + Transformer
