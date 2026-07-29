@@ -176,10 +176,15 @@ encoders with more extensive training, even on a dataset of only
 
 # Tech Stack
 
-- PyTorch, torchvision
-- HuggingFace Transformers
-- scikit-learn, matplotlib
-- COCO dataset
+- **PyTorch & torchvision** — model building, training, image transforms
+- **HuggingFace Transformers** — DistilBERT tokenizer and encoder
+- **Streamlit** — interactive demo app
+- **scikit-learn** — PCA for embedding visualization
+- **matplotlib** — plotting
+- **Pillow** — image processing
+- **tqdm** — progress bars
+- **NumPy** — numerical operations
+- **COCO dataset** — training and evaluation data
 
 ---
 
